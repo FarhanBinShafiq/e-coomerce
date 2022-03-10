@@ -10,7 +10,7 @@ import { Container, Form, FormControl, Nav, Navbar, NavDropdown, Offcanvas, } fr
 const Header = () => {
     return (
         <div>
-            <Navbar bg="dark" expand={false}>
+            <Navbar className='header-bg' expand={false}>
                 <Container fluid>
                     <Navbar.Brand href="#home">
                         <img
@@ -21,8 +21,8 @@ const Header = () => {
                             alt="React Bootstrap logo"
                         />
                     </Navbar.Brand>
-                    <div>
-                        <Form className="d-flex">
+                    <div className='search-box'>
+                        <Form>
                             <FormControl
                                 type="search"
                                 placeholder="Search"
@@ -33,12 +33,13 @@ const Header = () => {
                         </Form>
 
                     </div>
-                    <div className='d-flex'>
+                    
+                    <div className='header-nav-box'>
 
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action1"> About Us</Nav.Link>
+                        <Nav.Link href="#action1" className='header-nav'>Home</Nav.Link>
+                        <Nav.Link href="#action1" className='header-nav'> About Us</Nav.Link>
 
-                        <NavDropdown title="Products" id="basic-nav-dropdown">
+                        <NavDropdown title="Products" id="basic-nav-dropdown" className='header-nav'>
 
                             <NavDropdown.Item href="#action/3.1">Man</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Women</NavDropdown.Item>
@@ -48,9 +49,9 @@ const Header = () => {
                         </NavDropdown>
 
 
-                        <Nav.Link href="#action1">Reviews</Nav.Link>
-                        <Nav.Link href="#action1"><BsFillCartFill /> </Nav.Link>
-                        <Nav.Link href="#action1"><BsFillPersonFill /> </Nav.Link>
+                        <Nav.Link href="#action1" className='header-nav'>Reviews</Nav.Link>
+                        <Nav.Link href="#action1"  className='header-nav'><BsFillCartFill /> </Nav.Link>
+                        <Nav.Link href="#action1" className='header-nav'><BsFillPersonFill /> </Nav.Link>
                     </div>
 
 
@@ -76,12 +77,13 @@ const Header = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#action1">Home</Nav.Link>
-                                <Nav.Link href="#action2">Man</Nav.Link>
-                                <Nav.Link href="#action1">Women</Nav.Link>
-                                <Nav.Link href="#action1">Kids</Nav.Link>
-                                <Nav.Link href="#action1">Electronics</Nav.Link>
-                                <Nav.Link href="#action1">Contact</Nav.Link>
+                               
+                                <Nav.Link href="#action1" className='header-nav'>Home</Nav.Link>
+                                <Nav.Link href="#action2" className='header-nav'>Man</Nav.Link>
+                                <Nav.Link href="#action1" className='header-nav'>Women</Nav.Link>
+                                <Nav.Link href="#action1" className='header-nav'>Kids</Nav.Link>
+                                <Nav.Link href="#action1" className='header-nav'>Electronics</Nav.Link>
+                                <Nav.Link href="#action1" className='header-nav'>Contact</Nav.Link>
 
                             </Nav>
 

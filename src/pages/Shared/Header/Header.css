@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+.header-bg{
+    background-color: rgb(211, 203, 203);
+}
+
+
+ 
+.header-nav{
+  
+    font-family: 'Poppins', sans-serif;
+    color: brown !important;
+}
+
+.header-nav-box{
+    display: flex;
+}
+
+@media screen and (max-width:900px)  {
+    .search-box{
+        display: none;
+    }
+ 
+    .header-nav-box{
+        display: none;
+    }
+
+}
+
+
+
+ 
+
+
+
+
