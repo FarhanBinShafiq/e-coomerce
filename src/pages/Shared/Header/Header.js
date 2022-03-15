@@ -15,7 +15,7 @@ const Header = () => {
                     <Navbar.Brand href="#home">
                         <img
                             src={Logo}
-                            width="150"
+                            width="120"
                             height="80"
                             className="d-inline-block align-top"
                             alt="React Bootstrap logo"
@@ -41,10 +41,10 @@ const Header = () => {
 
                         <NavDropdown title="Products" id="basic-nav-dropdown" className='header-nav'>
 
-                            <NavDropdown.Item href="#action/3.1">Man</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Women</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Kids</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Electronics</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.1" className='header-nav'>Man</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.2" className='header-nav'>Women</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3" className='header-nav'>Kids</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/3.3" className='header-nav'>Electronics</NavDropdown.Item>
 
                         </NavDropdown>
 
@@ -69,21 +69,21 @@ const Header = () => {
                                         width="150"
                                         height="80"
                                         className="d-inline-block align-top"
-                                        alt="React Bootstrap logo"
+                                        alt="logo"
                                     />
                                 </Navbar.Brand>
 
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
+                            <Nav className=" justify-content-end flex-grow-1 pe-1">
                                
-                                <Nav.Link href="#action1" className='header-nav'>Home</Nav.Link>
-                                <Nav.Link href="#action2" className='header-nav'>Man</Nav.Link>
-                                <Nav.Link href="#action1" className='header-nav'>Women</Nav.Link>
-                                <Nav.Link href="#action1" className='header-nav'>Kids</Nav.Link>
-                                <Nav.Link href="#action1" className='header-nav'>Electronics</Nav.Link>
-                                <Nav.Link href="#action1" className='header-nav'>Contact</Nav.Link>
+                                <Nav.Link href="#action1" className='header-side-nav'>Home</Nav.Link>
+                                <Nav.Link href="#action2" className='header-side-nav'>Man</Nav.Link>
+                                <Nav.Link href="#action1" className='header-side-nav'>Women</Nav.Link>
+                                <Nav.Link href="#action1" className='header-side-nav'>Kids</Nav.Link>
+                                <Nav.Link href="#action1" className='header-side-nav'>Electronics</Nav.Link>
+                                <Nav.Link href="#action1" className='header-side-nav'>Contact</Nav.Link>
 
                             </Nav>
 
