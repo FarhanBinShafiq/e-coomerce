@@ -1,12 +1,11 @@
 import './App.css';
-import HomeTopBody from './pages/Home/HomeTopBody/HomeTopBody';
 import Header from './pages/Shared/Header/Header';
-
+import HomeTopBody from './pages/Home/HomeTopBody/HomeTopBody';
 function App() {
   return (
     <>
-      <Header></Header>
-      <HomeTopBody></HomeTopBody>
+      <Header/>
+      <HomeTopBody/>
     </>
   );
 }
